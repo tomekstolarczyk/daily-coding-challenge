@@ -96,6 +96,6 @@ int main(void)
     }
     for(int i = 0; i < returnSize; i++) {free(results2[i]);}
 
-    if(returnColumnSizes != NULL) {free(returnColumnSizes);}
+    free(returnColumnSizes);
     return 0;
 }
